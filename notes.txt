@@ -1,0 +1,6 @@
+Notes
+
+http://www.sitepoint.com/web-foundations/making-simple-image-slider-html-css-jquery/
+
+http://www.designchemical.com/blog/index.php/jquery/live-text-search-function-using-jquery/
+

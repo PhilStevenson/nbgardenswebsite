@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>NB Gardens</title>
+		
+		<meta charset="utf-8">
+		
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		
+		<meta name="viewport" content="width=device-width, user-scalable=no"
+		
+	</head>
+	<body>
+		<header>
+			<h1>NB Gardens</h1>
+			<h2>A gnome for every Occasion and adventure</h2>
+			<nav>
+				<a href='#home'>Home</a>
+				<a href='#shop'>Shop</a>
+				<a href='#about'>About</a>
+				<a href='#contact'>Contact Us</a>
+			</nav>
+		</header>
+		<section id=home>
+			<div id='slider'>
+				<img class='sliderImg' src='img/German_garden_gnome.jpg' alt='This is a photo of a German garden gnome' />
+				<img class='sliderImg' src='img/gnome-41.jpg' alt='gnomes hiding in the wilderness' />
+				<img class='sliderImg' src='img/Go_Away_Gnome.jpg' alt='The gnome that tells everyone to go away' />
+				<img class='sliderImg' src='img/indiana-garden-gnome.jpg' alt='The indiana gnome' />
+				<img class='sliderImg' src='img/maxresdefault.jpg' alt='' />
+			</div>
+		</section>
+		<section id=shop>
+			<form id=search>
+				<input id='searchInput' type=text placeholder="Search..."/>
+				<p id=minPriceLabel>Min Price</p>
+				<input id='minPrice' type="range" name="minPrice" min="0" max="100" value="0">
+				<p id=maxPriceLabel>Max Price</p>
+				<input id='maxPrice' type="range" name="maxPrice" min="0" max="100" value="100">
+			</form>
+			<div id=productList>
+				<div class=product>
+					<img src="img/german_thumb.jpg" alt="German Gnome Thumbnail" />
+					<h2>The German Gnome</h2>
+					<p class=price>£10</p>
+					<a href=#>Add to Basket</a>
+				</div>
+				<div class=product>
+					<img src="img/gardenGnomeThumb.jpg" alt="Garden Gnome Thumbnail" />
+					<h2>The Garden Gnome</h2>
+					<p class=price>£20</p>
+					<a href=#>Add to Basket</a>
+				</div>
+				<div class=product>
+					<img src="img/goawayThumb.jpg" alt="Go Away Gnome Thumbnail" />
+					<h2>The Go Away Gnome</h2>
+					<p class=price>£30</p>
+					<a href=#>Add to Basket</a>
+				</div>
+				<div class=product>
+					<img src="img/indianaThumb.jpg" alt="Indiana Gnome Thumbnail" />
+					<h2>The Indiana Gnome</h2>
+					<p class=price>£40</p>
+					<a href=#>Add to Basket</a>
+				</div>
+				<div class=product>
+					<img src="img/littleFriendThumb.jpg" alt="Say hello to my little friend" />
+					<h2>The Little Friend Gnome</h2>
+					<p class=price>£50</p>
+					<a href=#>Add to Basket</a>
+				</div>
+				<div class=product>
+					<img src="img/drunkThumb.jpg" alt="The Drunk Gnome" />
+					<h2>The Drunk Gnome</h2>
+					<p class=price>£75</p>
+					<a href=#>Add to Basket</a>
+				</div>
+			</div>
+		</section>
+		
+		<section id="about">
+			<div id=missionState>
+				<h1>NB Gardens Mission Statement<br></h1>
+				<em>"NB Gardens aims to provide a gnome for every Purpose, Occasion, and Adventure"</em>
+			</div>
+		</section>
+		
+		<section id="contact">
+		
+		</section>
+		<footer>
+			<small>Copyright © Web Design and Development by Phil Stevenson</small>
+		</footer>
+	</body>
+	
+	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="js/slider.js"></script>
+	<script src="js/livesearch.js"></script>
+	
+</html>
