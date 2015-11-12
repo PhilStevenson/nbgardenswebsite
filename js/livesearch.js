@@ -29,8 +29,8 @@ $(document).ready(function(){
 		var minPrice = $("#minPrice").val();
 		var maxPrice = $("#maxPrice").val();
 		
-		$("#maxPriceLabel").html("Maximum Price: " + maxPrice);
-		$("#minPriceLabel").html("Minimum Price: " + minPrice);
+		$("#maxPriceLabel").html("Maximum Price: £" + maxPrice);
+		$("#minPriceLabel").html("Minimum Price: £" + minPrice);
 		
 		$("#productList .product").each(function(){
 			var price = parseInt(jQuery(this).children(".price").text().substring(1));

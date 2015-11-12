@@ -20,8 +20,23 @@
 				<a href='#home'>Home</a>
 				<a href='#shop'>Shop</a>
 				<a href='#about'>About</a>
-				<a href='#contact'>Contact Us</a>
+				<a id='jsPopUpOpen' data-modal-id='basket' href='#' onClick="return false;">Basket</a>
 			</nav>
+
+			<div id="basket" class="productPopUp">  
+				<div class='popUpHeader'>
+					<a href="#shop" class="jsPopUpClose close" onClick="return false;">×</a>
+					<h3>Basket</h3>
+				</div>
+				<div class="popUpBody">
+					
+				</div>
+				<div class='popUpFooter clearfloat'>
+					<a href="#shop" class="jsPopUpClose" onClick="return false;">Close</a>
+				</div>
+			</div>
+
+
 		</header>
 		<section id='home'>
 			<div id='slider'>
@@ -101,14 +116,14 @@
 
 				<div id="germanGnomeProd" class="productPopUp">  
 					<div class='popUpHeader'>
-						<a href="#shop" class="jsPopUpClose close">×</a>
+						<a href="#shop" class="jsPopUpClose close" onClick="return false;">×</a>
 						<h3>The German Gnome</h3>
 					</div>
 					<div class="popUpBody">
 						<img src="img/german_thumb.jpg" alt="German Gnome Thumbnail" />
 						<div class='left'>
 							
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut commodo at felis vitae facilisis. Cras volutpat fringilla nunc vitae hendrerit. Donec porta id augue quis sodales. Sed sit amet metus ornare, mattis sem at, dignissim arcu. Cras rhoncus ornare mollis. Ut tempor augue mi, sed luctus neque luctus non. Vestibulum mollis tristique blandit. Aenean condimentum in leo ac feugiat. Sed posuere, est at eleifend suscipit, erat ante pretium turpis, eget semper ex risus nec dolor. Etiam pellentesque nulla neque, ut ullamcorper purus facilisis at. Nam imperdiet arcu felis, eu placerat risus dapibus sit amet. Praesent at justo at lectus scelerisque mollis. Mauris molestie mattis tellus ut facilisis. Sed vel ligula ornare, posuere velit ornare, consectetur erat.</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut commodo at felis vitae facilisis. Cras volutpat fringilla nunc vitae hendrerit. Donec porta id augue quis sodales. Sed sit amet metus ornare, mattis sem at, dignissim arcu. Cras rhoncus ornare mollis. </p>
 						</div>
 						<div class='right'>
 							<p>£10</p>
@@ -119,21 +134,21 @@
 						</div>
 					</div>
 					<div class='popUpFooter clearfloat'>
-						<a href="#shop" class="jsPopUpClose">Close</a>
+						<a href="#shop" class="jsPopUpClose" onClick="return false;">Close</a>
 					</div>
 				</div>
 
 
 				<div id="gardenGnomeProd" class="productPopUp">  
 					<div class='popUpHeader'>
-						<a href="#shop" class="jsPopUpClose close">×</a>
+						<a href="#shop" class="jsPopUpClose close" onClick="return false;">×</a>
 						<h3>The Garden Gnome</h3>
 					</div>
 					<div class="popUpBody">
 						<img src="img/gardenGnomeThumb.jpg" alt="garden Gnome Thumbnail" />
 						<div class='left'>
 							
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut commodo at felis vitae facilisis. Cras volutpat fringilla nunc vitae hendrerit. Donec porta id augue quis sodales. Sed sit amet metus ornare, mattis sem at, dignissim arcu. Cras rhoncus ornare mollis. Ut tempor augue mi, sed luctus neque luctus non. Vestibulum mollis tristique blandit. Aenean condimentum in leo ac feugiat. Sed posuere, est at eleifend suscipit, erat ante pretium turpis, eget semper ex risus nec dolor. Etiam pellentesque nulla neque, ut ullamcorper purus facilisis at. Nam imperdiet arcu felis, eu placerat risus dapibus sit amet. Praesent at justo at lectus scelerisque mollis. Mauris molestie mattis tellus ut facilisis. Sed vel ligula ornare, posuere velit ornare, consectetur erat.</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut commodo at felis vitae facilisis. Cras volutpat fringilla nunc vitae hendrerit. Donec porta id augue quis sodales. Sed sit amet metus ornare, mattis sem at, dignissim arcu. Cras rhoncus ornare mollis. </p>
 						</div>
 						<div class='right'>
 							<p>£20</p>
@@ -144,20 +159,20 @@
 						</div>
 					</div>
 					<div class='popUpFooter clearfloat'>
-						<a href="#shop" class="jsPopUpClose">Close</a>
+						<a href="#shop" class="jsPopUpClose" onClick="return false;">Close</a>
 					</div>
 				</div>
 
 				<div id="goawayGnomeProd" class="productPopUp">  
 					<div class='popUpHeader'>
-						<a href="#shop" class="jsPopUpClose close">×</a>
+						<a href="#shop" class="jsPopUpClose close" onClick="return false;">×</a>
 						<h3>The Go Away Gnome</h3>
 					</div>
 					<div class="popUpBody">
 						<img src="img/goawayThumb.jpg" alt="Go Away Gnome Thumbnail" />
 						<div class='left'>
 							
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut commodo at felis vitae facilisis. Cras volutpat fringilla nunc vitae hendrerit. Donec porta id augue quis sodales. Sed sit amet metus ornare, mattis sem at, dignissim arcu. Cras rhoncus ornare mollis. Ut tempor augue mi, sed luctus neque luctus non. Vestibulum mollis tristique blandit. Aenean condimentum in leo ac feugiat. Sed posuere, est at eleifend suscipit, erat ante pretium turpis, eget semper ex risus nec dolor. Etiam pellentesque nulla neque, ut ullamcorper purus facilisis at. Nam imperdiet arcu felis, eu placerat risus dapibus sit amet. Praesent at justo at lectus scelerisque mollis. Mauris molestie mattis tellus ut facilisis. Sed vel ligula ornare, posuere velit ornare, consectetur erat.</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut commodo at felis vitae facilisis. Cras volutpat fringilla nunc vitae hendrerit. Donec porta id augue quis sodales. Sed sit amet metus ornare, mattis sem at, dignissim arcu. Cras rhoncus ornare mollis. </p>
 						</div>
 						<div class='right'>
 							<p>£30</p>
@@ -168,21 +183,21 @@
 						</div>
 					</div>
 					<div class='popUpFooter clearfloat'>
-						<a href="#shop" class="jsPopUpClose">Close</a>
+						<a href="#shop" class="jsPopUpClose" onClick="return false;">Close</a>
 					</div>
 				</div>
 
 
 				<div id="indianaGnomeProd" class="productPopUp">  
 					<div class='popUpHeader'>
-						<a href="#shop" class="jsPopUpClose close">×</a>
+						<a href="#shop" class="jsPopUpClose close" onClick="return false;">×</a>
 						<h3>The Indiana Gnome</h3>
 					</div>
 					<div class="popUpBody">
 						<img src="img/indianaThumb.jpg" alt="Indiana Gnome Thumbnail" />
 						<div class='left'>
 							
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut commodo at felis vitae facilisis. Cras volutpat fringilla nunc vitae hendrerit. Donec porta id augue quis sodales. Sed sit amet metus ornare, mattis sem at, dignissim arcu. Cras rhoncus ornare mollis. Ut tempor augue mi, sed luctus neque luctus non. Vestibulum mollis tristique blandit. Aenean condimentum in leo ac feugiat. Sed posuere, est at eleifend suscipit, erat ante pretium turpis, eget semper ex risus nec dolor. Etiam pellentesque nulla neque, ut ullamcorper purus facilisis at. Nam imperdiet arcu felis, eu placerat risus dapibus sit amet. Praesent at justo at lectus scelerisque mollis. Mauris molestie mattis tellus ut facilisis. Sed vel ligula ornare, posuere velit ornare, consectetur erat.</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut commodo at felis vitae facilisis. Cras volutpat fringilla nunc vitae hendrerit. Donec porta id augue quis sodales. Sed sit amet metus ornare, mattis sem at, dignissim arcu. Cras rhoncus ornare mollis.</p>
 						</div>
 						<div class='right'>
 							<p>£40</p>
@@ -193,20 +208,20 @@
 						</div>
 					</div>
 					<div class='popUpFooter clearfloat'>
-						<a href="#shop" class="jsPopUpClose">Close</a>
+						<a href="#shop" class="jsPopUpClose" onClick="return false;">Close</a>
 					</div>
 				</div>
 
 				<div id="littleFriendGnomeProd" class="productPopUp">  
 					<div class='popUpHeader'>
-						<a href="#shop" class="jsPopUpClose close">×</a>
+						<a href="#shop" class="jsPopUpClose close" onClick="return false;">×</a>
 						<h3>The Little Friend Gnome</h3>
 					</div>
 					<div class="popUpBody">
 						<img src="img/littleFriendThumb.jpg" alt="Little Friend Gnome Thumbnail" />
 						<div class='left'>
 							
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut commodo at felis vitae facilisis. Cras volutpat fringilla nunc vitae hendrerit. Donec porta id augue quis sodales. Sed sit amet metus ornare, mattis sem at, dignissim arcu. Cras rhoncus ornare mollis. Ut tempor augue mi, sed luctus neque luctus non. Vestibulum mollis tristique blandit. Aenean condimentum in leo ac feugiat. Sed posuere, est at eleifend suscipit, erat ante pretium turpis, eget semper ex risus nec dolor. Etiam pellentesque nulla neque, ut ullamcorper purus facilisis at. Nam imperdiet arcu felis, eu placerat risus dapibus sit amet. Praesent at justo at lectus scelerisque mollis. Mauris molestie mattis tellus ut facilisis. Sed vel ligula ornare, posuere velit ornare, consectetur erat.</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut commodo at felis vitae facilisis. Cras volutpat fringilla nunc vitae hendrerit. Donec porta id augue quis sodales. Sed sit amet metus ornare, mattis sem at, dignissim arcu. Cras rhoncus ornare mollis. </p>
 						</div>
 						<div class='right'>
 							<p>£50</p>
@@ -217,21 +232,21 @@
 						</div>
 					</div>
 					<div class='popUpFooter clearfloat'>
-						<a href="#shop" class="jsPopUpClose">Close</a>
+						<a href="#shop" class="jsPopUpClose" onClick="return false;">Close</a>
 					</div>
 				</div>
 
 
 				<div id="drunkGnomeProd" class="productPopUp">  
 					<div class='popUpHeader'>
-						<a href="#shop" class="jsPopUpClose close">×</a>
+						<a href="#shop" class="jsPopUpClose close" onClick="return false;">×</a>
 						<h3>The Drunk Gnome</h3>
 					</div>
 					<div class="popUpBody">
 						<img src="img/drunkThumb.jpg" alt="Drunk Gnome Thumbnail" />
 						<div class='left'>
 							
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut commodo at felis vitae facilisis. Cras volutpat fringilla nunc vitae hendrerit. Donec porta id augue quis sodales. Sed sit amet metus ornare, mattis sem at, dignissim arcu. Cras rhoncus ornare mollis. Ut tempor augue mi, sed luctus neque luctus non. Vestibulum mollis tristique blandit. Aenean condimentum in leo ac feugiat. Sed posuere, est at eleifend suscipit, erat ante pretium turpis, eget semper ex risus nec dolor. Etiam pellentesque nulla neque, ut ullamcorper purus facilisis at. Nam imperdiet arcu felis, eu placerat risus dapibus sit amet. Praesent at justo at lectus scelerisque mollis. Mauris molestie mattis tellus ut facilisis. Sed vel ligula ornare, posuere velit ornare, consectetur erat.</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut commodo at felis vitae facilisis. Cras volutpat fringilla nunc vitae hendrerit. Donec porta id augue quis sodales. Sed sit amet metus ornare, mattis sem at, dignissim arcu. Cras rhoncus ornare mollis. </p>
 						</div>
 						<div class='right'>
 							<p>£75</p>
@@ -242,7 +257,7 @@
 						</div>
 					</div>
 					<div class='popUpFooter clearfloat'>
-						<a href="#shop" class="jsPopUpClose">Close</a>
+						<a href="#shop" class="jsPopUpClose" onClick="return false;">Close</a>
 					</div>
 				</div>
 			</div>
