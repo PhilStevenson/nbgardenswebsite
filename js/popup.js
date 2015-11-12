@@ -18,9 +18,16 @@ $(".jsPopUpClose, .PopUpOverlay").click(function() {
   });
 });
  
+// $(window).resize(function() {
+//   $(".productPopUp").css({
+//     top: ($(window).height() - $(".productPopUp").outerHeight()) / 4,
+//     left: ($(window).width() - $(".productPopUp").outerWidth()) / 2
+//   });
+// });
+
 $(window).resize(function() {
   $(".productPopUp").css({
-    top: ($(window).height() - $(".productPopUp").outerHeight()) / 2,
+    top: ($(window).height() - $(".productPopUp").outerHeight()) / 8,
     left: ($(window).width() - $(".productPopUp").outerWidth()) / 2
   });
 });
