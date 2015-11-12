@@ -95,15 +95,6 @@ form p {
 	padding:5px 10px;
 }
 
-.product p {
-	float:left;
-}
-
-.product a {
-	float:right;
-}
-
-
 
 section#about {
 	background-image:url('../img/Grey-Background.png');
@@ -212,6 +203,35 @@ footer {
 small {
 	font-size:0.7em;
 }
+
+.popUpBody{
+	text-align: center;
+}
+
+.popUpBody .left, .popUpBody .right {
+	display:inline-block;
+}
+
+.popUpBody .left {
+	padding:10px;
+}
+.popUpBody .left p {
+	text-align: left;
+
+}
+
+.popUpBody .right {
+	padding: 20px;
+}
+
+.clearfloat {
+	clear: both;
+}
+.hidden {
+	display: none;
+}
+
+
 /*/// Styles for 480px and greater ///////////////
 *
 *

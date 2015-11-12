@@ -7,8 +7,9 @@
 		
 		<link rel="stylesheet" type="text/css" href="css/reset.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/popup.css">
 		
-		<meta name="viewport" content="width=device-width, user-scalable=no"
+		<meta name="viewport" content="width=device-width, user-scalable=no">
 		
 	</head>
 	<body>
@@ -22,7 +23,7 @@
 				<a href='#contact'>Contact Us</a>
 			</nav>
 		</header>
-		<section id=home>
+		<section id='home'>
 			<div id='slider'>
 				<img class='sliderImg' src='img/German_garden_gnome.jpg' alt='This is a photo of a German garden gnome' />
 				<img class='sliderImg' src='img/gnome-41.jpg' alt='gnomes hiding in the wilderness' />
@@ -31,56 +32,230 @@
 				<img class='sliderImg' src='img/maxresdefault.jpg' alt='' />
 			</div>
 		</section>
-		<section id=shop>
-			<form id=search>
+		<section id='shop'>
+			<form id='search'>
 				<input id='searchInput' type=text placeholder="Search..."/>
-				<p id=minPriceLabel>Min Price</p>
+				<p id='minPriceLabel'>Min Price</p>
 				<input id='minPrice' type="range" name="minPrice" min="0" max="100" value="0">
-				<p id=maxPriceLabel>Max Price</p>
+				<p id='maxPriceLabel'>Max Price</p>
 				<input id='maxPrice' type="range" name="maxPrice" min="0" max="100" value="100">
 			</form>
-			<div id=productList>
-				<div class=product>
-					<img src="img/german_thumb.jpg" alt="German Gnome Thumbnail" />
-					<h2>The German Gnome</h2>
-					<p class=price>£10</p>
-					<a href=#>Add to Basket</a>
+			<div id='productList'>
+				
+				<a class="jsPopUpOpen" href="#" data-modal-id="germanGnomeProd">
+					<div class=product>
+						<img src="img/german_thumb.jpg" alt="German Gnome Thumbnail" />
+						<h2>The German Gnome</h2>
+						<p class='price'>£10</p>
+						<p class='hidden'>Brown</p>
+					</div>
+				</a>
+
+				<a class="jsPopUpOpen" href="#" data-modal-id="gardenGnomeProd">
+					<div class='product'>
+						<img src="img/gardenGnomeThumb.jpg" alt="Garden Gnome Thumbnail" />
+						<h2>The Garden Gnome</h2>
+						<p class='price'>£20</p>
+						<p class='hidden'>Red</p>
+					</div>
+				</a>
+
+				<a class="jsPopUpOpen" href="#" data-modal-id="goawayGnomeProd">
+					<div class='product'>
+						<img src="img/goawayThumb.jpg" alt="Go Away Gnome Thumbnail" />
+						<h2>The Go Away Gnome</h2>
+						<p class='price'>£30</p>
+						<p class='hidden'>Blue</p>
+					</div>
+				</a>
+
+				<a class="jsPopUpOpen" href="#" data-modal-id="indianaGnomeProd">
+					<div class='product'>
+						<img src="img/indianaThumb.jpg" alt="Indiana Gnome Thumbnail" />
+						<h2>The Indiana Gnome</h2>
+						<p class='price'>£40</p>
+						<p class='hidden'>Red</p>
+					</div>
+				</a>
+
+				<a class="jsPopUpOpen" href="#" data-modal-id="littleFriendGnomeProd">
+					<div class='product'>
+						<img src="img/littleFriendThumb.jpg" alt="Say hello to my little friend" />
+						<h2>The Little Friend Gnome</h2>
+						<p class='price'>£50</p>
+						<p class='hidden'>Yellow</p>
+					</div>
+				</a>
+
+				<a class="jsPopUpOpen" href="#" data-modal-id="drunkGnomeProd">
+					<div class='product'>
+						<img src="img/drunkThumb.jpg" alt="The Drunk Gnome" />
+						<h2>The Drunk Gnome</h2>
+						<p class='price'>£75</p>
+						<p class='hidden'>Green</p>
+					</div>
+				</a>
+			</div>
+
+			<div id='productDetails'>
+
+				<div id="germanGnomeProd" class="productPopUp">  
+					<div class='popUpHeader'>
+						<a href="#shop" class="jsPopUpClose close">×</a>
+						<h3>The German Gnome</h3>
+					</div>
+					<div class="popUpBody">
+						<img src="img/german_thumb.jpg" alt="German Gnome Thumbnail" />
+						<div class='left'>
+							
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut commodo at felis vitae facilisis. Cras volutpat fringilla nunc vitae hendrerit. Donec porta id augue quis sodales. Sed sit amet metus ornare, mattis sem at, dignissim arcu. Cras rhoncus ornare mollis. Ut tempor augue mi, sed luctus neque luctus non. Vestibulum mollis tristique blandit. Aenean condimentum in leo ac feugiat. Sed posuere, est at eleifend suscipit, erat ante pretium turpis, eget semper ex risus nec dolor. Etiam pellentesque nulla neque, ut ullamcorper purus facilisis at. Nam imperdiet arcu felis, eu placerat risus dapibus sit amet. Praesent at justo at lectus scelerisque mollis. Mauris molestie mattis tellus ut facilisis. Sed vel ligula ornare, posuere velit ornare, consectetur erat.</p>
+						</div>
+						<div class='right'>
+							<p>£10</p>
+							<form>
+								<input type='text' name='quantity' value='1'>
+								<input type='submit' value='Add to Cart'>
+							</form>
+						</div>
+					</div>
+					<div class='popUpFooter clearfloat'>
+						<a href="#shop" class="jsPopUpClose">Close</a>
+					</div>
 				</div>
-				<div class=product>
-					<img src="img/gardenGnomeThumb.jpg" alt="Garden Gnome Thumbnail" />
-					<h2>The Garden Gnome</h2>
-					<p class=price>£20</p>
-					<a href=#>Add to Basket</a>
+
+
+				<div id="gardenGnomeProd" class="productPopUp">  
+					<div class='popUpHeader'>
+						<a href="#shop" class="jsPopUpClose close">×</a>
+						<h3>The Garden Gnome</h3>
+					</div>
+					<div class="popUpBody">
+						<img src="img/gardenGnomeThumb.jpg" alt="garden Gnome Thumbnail" />
+						<div class='left'>
+							
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut commodo at felis vitae facilisis. Cras volutpat fringilla nunc vitae hendrerit. Donec porta id augue quis sodales. Sed sit amet metus ornare, mattis sem at, dignissim arcu. Cras rhoncus ornare mollis. Ut tempor augue mi, sed luctus neque luctus non. Vestibulum mollis tristique blandit. Aenean condimentum in leo ac feugiat. Sed posuere, est at eleifend suscipit, erat ante pretium turpis, eget semper ex risus nec dolor. Etiam pellentesque nulla neque, ut ullamcorper purus facilisis at. Nam imperdiet arcu felis, eu placerat risus dapibus sit amet. Praesent at justo at lectus scelerisque mollis. Mauris molestie mattis tellus ut facilisis. Sed vel ligula ornare, posuere velit ornare, consectetur erat.</p>
+						</div>
+						<div class='right'>
+							<p>£20</p>
+							<form>
+								<input type='text' name='quantity' value='1'>
+								<input type='submit' value='Add to Cart'>
+							</form>
+						</div>
+					</div>
+					<div class='popUpFooter clearfloat'>
+						<a href="#shop" class="jsPopUpClose">Close</a>
+					</div>
 				</div>
-				<div class=product>
-					<img src="img/goawayThumb.jpg" alt="Go Away Gnome Thumbnail" />
-					<h2>The Go Away Gnome</h2>
-					<p class=price>£30</p>
-					<a href=#>Add to Basket</a>
+
+				<div id="goawayGnomeProd" class="productPopUp">  
+					<div class='popUpHeader'>
+						<a href="#shop" class="jsPopUpClose close">×</a>
+						<h3>The Go Away Gnome</h3>
+					</div>
+					<div class="popUpBody">
+						<img src="img/goawayThumb.jpg" alt="Go Away Gnome Thumbnail" />
+						<div class='left'>
+							
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut commodo at felis vitae facilisis. Cras volutpat fringilla nunc vitae hendrerit. Donec porta id augue quis sodales. Sed sit amet metus ornare, mattis sem at, dignissim arcu. Cras rhoncus ornare mollis. Ut tempor augue mi, sed luctus neque luctus non. Vestibulum mollis tristique blandit. Aenean condimentum in leo ac feugiat. Sed posuere, est at eleifend suscipit, erat ante pretium turpis, eget semper ex risus nec dolor. Etiam pellentesque nulla neque, ut ullamcorper purus facilisis at. Nam imperdiet arcu felis, eu placerat risus dapibus sit amet. Praesent at justo at lectus scelerisque mollis. Mauris molestie mattis tellus ut facilisis. Sed vel ligula ornare, posuere velit ornare, consectetur erat.</p>
+						</div>
+						<div class='right'>
+							<p>£30</p>
+							<form>
+								<input type='text' name='quantity' value='1'>
+								<input type='submit' value='Add to Cart'>
+							</form>
+						</div>
+					</div>
+					<div class='popUpFooter clearfloat'>
+						<a href="#shop" class="jsPopUpClose">Close</a>
+					</div>
 				</div>
-				<div class=product>
-					<img src="img/indianaThumb.jpg" alt="Indiana Gnome Thumbnail" />
-					<h2>The Indiana Gnome</h2>
-					<p class=price>£40</p>
-					<a href=#>Add to Basket</a>
+
+
+				<div id="indianaGnomeProd" class="productPopUp">  
+					<div class='popUpHeader'>
+						<a href="#shop" class="jsPopUpClose close">×</a>
+						<h3>The Indiana Gnome</h3>
+					</div>
+					<div class="popUpBody">
+						<img src="img/indianaThumb.jpg" alt="Indiana Gnome Thumbnail" />
+						<div class='left'>
+							
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut commodo at felis vitae facilisis. Cras volutpat fringilla nunc vitae hendrerit. Donec porta id augue quis sodales. Sed sit amet metus ornare, mattis sem at, dignissim arcu. Cras rhoncus ornare mollis. Ut tempor augue mi, sed luctus neque luctus non. Vestibulum mollis tristique blandit. Aenean condimentum in leo ac feugiat. Sed posuere, est at eleifend suscipit, erat ante pretium turpis, eget semper ex risus nec dolor. Etiam pellentesque nulla neque, ut ullamcorper purus facilisis at. Nam imperdiet arcu felis, eu placerat risus dapibus sit amet. Praesent at justo at lectus scelerisque mollis. Mauris molestie mattis tellus ut facilisis. Sed vel ligula ornare, posuere velit ornare, consectetur erat.</p>
+						</div>
+						<div class='right'>
+							<p>£40</p>
+							<form>
+								<input type='text' name='quantity' value='1'>
+								<input type='submit' value='Add to Cart'>
+							</form>
+						</div>
+					</div>
+					<div class='popUpFooter clearfloat'>
+						<a href="#shop" class="jsPopUpClose">Close</a>
+					</div>
 				</div>
-				<div class=product>
-					<img src="img/littleFriendThumb.jpg" alt="Say hello to my little friend" />
-					<h2>The Little Friend Gnome</h2>
-					<p class=price>£50</p>
-					<a href=#>Add to Basket</a>
+
+				<div id="littleFriendGnomeProd" class="productPopUp">  
+					<div class='popUpHeader'>
+						<a href="#shop" class="jsPopUpClose close">×</a>
+						<h3>The Little Friend Gnome</h3>
+					</div>
+					<div class="popUpBody">
+						<img src="img/littleFriendThumb.jpg" alt="Little Friend Gnome Thumbnail" />
+						<div class='left'>
+							
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut commodo at felis vitae facilisis. Cras volutpat fringilla nunc vitae hendrerit. Donec porta id augue quis sodales. Sed sit amet metus ornare, mattis sem at, dignissim arcu. Cras rhoncus ornare mollis. Ut tempor augue mi, sed luctus neque luctus non. Vestibulum mollis tristique blandit. Aenean condimentum in leo ac feugiat. Sed posuere, est at eleifend suscipit, erat ante pretium turpis, eget semper ex risus nec dolor. Etiam pellentesque nulla neque, ut ullamcorper purus facilisis at. Nam imperdiet arcu felis, eu placerat risus dapibus sit amet. Praesent at justo at lectus scelerisque mollis. Mauris molestie mattis tellus ut facilisis. Sed vel ligula ornare, posuere velit ornare, consectetur erat.</p>
+						</div>
+						<div class='right'>
+							<p>£50</p>
+							<form>
+								<input type='text' name='quantity' value='1'>
+								<input type='submit' value='Add to Cart'>
+							</form>
+						</div>
+					</div>
+					<div class='popUpFooter clearfloat'>
+						<a href="#shop" class="jsPopUpClose">Close</a>
+					</div>
 				</div>
-				<div class=product>
-					<img src="img/drunkThumb.jpg" alt="The Drunk Gnome" />
-					<h2>The Drunk Gnome</h2>
-					<p class=price>£75</p>
-					<a href=#>Add to Basket</a>
+
+
+				<div id="drunkGnomeProd" class="productPopUp">  
+					<div class='popUpHeader'>
+						<a href="#shop" class="jsPopUpClose close">×</a>
+						<h3>The Drunk Gnome</h3>
+					</div>
+					<div class="popUpBody">
+						<img src="img/drunkThumb.jpg" alt="Drunk Gnome Thumbnail" />
+						<div class='left'>
+							
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut commodo at felis vitae facilisis. Cras volutpat fringilla nunc vitae hendrerit. Donec porta id augue quis sodales. Sed sit amet metus ornare, mattis sem at, dignissim arcu. Cras rhoncus ornare mollis. Ut tempor augue mi, sed luctus neque luctus non. Vestibulum mollis tristique blandit. Aenean condimentum in leo ac feugiat. Sed posuere, est at eleifend suscipit, erat ante pretium turpis, eget semper ex risus nec dolor. Etiam pellentesque nulla neque, ut ullamcorper purus facilisis at. Nam imperdiet arcu felis, eu placerat risus dapibus sit amet. Praesent at justo at lectus scelerisque mollis. Mauris molestie mattis tellus ut facilisis. Sed vel ligula ornare, posuere velit ornare, consectetur erat.</p>
+						</div>
+						<div class='right'>
+							<p>£75</p>
+							<form>
+								<input type='text' name='quantity' value='1'>
+								<input type='submit' value='Add to Cart'>
+							</form>
+						</div>
+					</div>
+					<div class='popUpFooter clearfloat'>
+						<a href="#shop" class="jsPopUpClose">Close</a>
+					</div>
 				</div>
 			</div>
+
 		</section>
+
+			
+
+
+		
 		
 		<section id="about">
-			<div id=missionState>
+			<div id='missionState'>
 				<h1>NB Gardens Mission Statement<br></h1>
 				<em>"NB Gardens aims to provide a gnome for every Purpose, Occasion, and Adventure"</em>
 			</div>
@@ -92,10 +267,12 @@
 		<footer>
 			<small>Copyright © Web Design and Development by Phil Stevenson</small>
 		</footer>
-	</body>
-	
-	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+
+
+		<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="js/popup.js"></script>
 	<script src="js/slider.js"></script>
 	<script src="js/livesearch.js"></script>
-	
+
+	</body>
 </html>

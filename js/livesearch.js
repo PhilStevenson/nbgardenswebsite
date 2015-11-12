@@ -34,9 +34,7 @@ $(document).ready(function(){
 		
 		$("#productList .product").each(function(){
 			var price = parseInt(jQuery(this).children(".price").text().substring(1));
-			
-			console.log(minPrice + " " + maxPrice);
-			
+						
 			if(price > maxPrice) {
 				$(this).fadeOut();
 			} else if(price < minPrice) {
