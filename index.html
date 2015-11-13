@@ -16,7 +16,7 @@
 		<header>
 			<h1>NB Gardens</h1>
 			<h2>A gnome for every Occasion and adventure</h2>
-			<nav>
+			<nav class='nav'>
 				<a href='#home'>Home</a>
 				<a href='#shop'>Shop</a>
 				<a href='#about'>About</a>
@@ -28,7 +28,7 @@
 					<a href="#shop" class="jsPopUpClose close" onClick="return false;">×</a>
 					<h3>Basket</h3>
 				</div>
-				<div class="popUpBody">
+				<div class="popUpBody" id='basketContent'>
 					
 				</div>
 				<div class='popUpFooter clearfloat'>
@@ -128,8 +128,8 @@
 						<div class='right'>
 							<p>£10</p>
 							<form>
-								<input type='text' name='quantity' value='1'>
-								<input type='submit' value='Add to Cart'>
+								<input class='quantityInput' type='text' name='quantity' value='1'>
+								<input type='button' value='Add to Cart' onClick="addToBasket('germanGnomeProd','German','10');">
 							</form>
 						</div>
 					</div>
@@ -153,8 +153,8 @@
 						<div class='right'>
 							<p>£20</p>
 							<form>
-								<input type='text' name='quantity' value='1'>
-								<input type='submit' value='Add to Cart'>
+								<input class='quantityInput' type='text' name='quantity' value='1'>
+								<input type='button' value='Add to Cart' onClick="addToBasket('gardenGnomeProd','Garden','20');">
 							</form>
 						</div>
 					</div>
@@ -177,8 +177,8 @@
 						<div class='right'>
 							<p>£30</p>
 							<form>
-								<input type='text' name='quantity' value='1'>
-								<input type='submit' value='Add to Cart'>
+								<input class='quantityInput' type='text' name='quantity' value='1'>
+								<input type='button' value='Add to Cart' onClick="addToBasket('goawayGnomeProd','Go Away','30');">
 							</form>
 						</div>
 					</div>
@@ -202,8 +202,8 @@
 						<div class='right'>
 							<p>£40</p>
 							<form>
-								<input type='text' name='quantity' value='1'>
-								<input type='submit' value='Add to Cart'>
+								<input class='quantityInput' type='text' name='quantity' value='1'>
+								<input type='button' value='Add to Cart' onClick="addToBasket('indianaGnomeProd','Indiana','40');">
 							</form>
 						</div>
 					</div>
@@ -226,8 +226,8 @@
 						<div class='right'>
 							<p>£50</p>
 							<form>
-								<input type='text' name='quantity' value='1'>
-								<input type='submit' value='Add to Cart'>
+								<input class='quantityInput' type='text' name='quantity' value='1'>
+								<input type='button' value='Add to Cart' onClick="addToBasket('littleFriendGnomeProd','Little Friend','50');">
 							</form>
 						</div>
 					</div>
@@ -239,7 +239,7 @@
 
 				<div id="drunkGnomeProd" class="productPopUp">  
 					<div class='popUpHeader'>
-						<a href="#shop" class="jsPopUpClose close" onClick="return false;">×</a>
+						<a href="#shop" class="jsPopUpClose close"onClick="return false;">×</a>
 						<h3>The Drunk Gnome</h3>
 					</div>
 					<div class="popUpBody">
